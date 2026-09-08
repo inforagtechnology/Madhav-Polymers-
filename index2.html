@@ -9,70 +9,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+
   <!-- Google Fonts for Serif & Sans-Serif fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
-
-
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/search.css">
 </head>
 <body>
 
-<header>
-  <div class="nav-wrap">
-    <a href="index.html" class="brand">
-      <img src="assets/madhav-emblem.png" alt="Madhav Polymers emblem">
-      <span class="brand-text">
-        <span class="name">Madhav Polymers</span><br>
-        <span class="tag">ADVANCED POLYMER &amp; LASTING TRUST</span>
-      </span>
-    </a>
-    <nav class="main-nav">
-      <ul>
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li class="has-dropdown">
-          <a href="products.html">Products <span class="caret">▾</span></a>
-          <ul class="dropdown">
-            <li><a href="product-weatherstrip.html">Weatherstrip</a></li>
-            <li><a href="product-rubber-gasket.html">Rubber Gasket</a></li>
-            <li><a href="product-pvc-seals-profiles.html">PVC Seals &amp; Profiles</a></li>
-            <li><a href="product-door-seals.html">Door Seals</a></li>
-            <li><a href="product-auto-drop-down-seal.html">Auto Drop Down Seal</a></li>
-          </ul>
-        </li>
-        <li><a href="custom-solution.html">Custom Solution</a></li>
-        <li><a href="quality.html">Quality</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
-    <!-- <div class="nav-cta">
-      <a href="contact.html" class="btn btn-outline-navy">Get a Quote</a>
-    </div> -->
+<!-- Shared header is injected here by js/include.js -->
+<div id="header-placeholder"></div>
 
-    <div class="nav-cta">
-  <form class="nav-search-form" action="search.html" method="GET">
-    <input 
-      type="text" 
-      name="q" 
-      class="nav-search-input" 
-      placeholder="Search..." 
-      required 
-    />
-    <button type="submit" class="nav-search-btn" aria-label="Search">
-      <svg viewBox="0 0 24 24">
-        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
-      </svg>
-    </button>
-  </form>
-</div>
-    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-</header>
 <section class="hero" id="home">
   <video class="hero-video" autoplay muted loop playsinline poster="images/hero-poster.jpg">
     <source src="videos/seal-manufacturing.mp4" type="video/mp4">
@@ -102,30 +53,6 @@
     </div>
   </div>
 </section>
-<!-- <section class="hero" id="home">
-  <div class="wrap hero-grid">
-    <div>
-      <h1>Engineering trust into every <em>seal</em>.</h1>
-      <p class="lede">Madhav Polymers designs and manufactures precision rubber, PVC and weatherstrip sealing solutions for architecture and industry — formulated for durability, finished for trust.</p>
-      <div class="hero-ctas">
-        <a href="products.html" class="btn btn-gold">Explore Products</a>
-        <a href="contact.html" class="btn btn-outline">Request a Quote</a>
-      </div>
-    </div>
-    <div class="hero-art">
-      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="200" cy="190" r="150" fill="none" stroke="#F2A71B" stroke-width="1.4" opacity="0.55"/>
-        <circle cx="200" cy="190" r="150" fill="none" stroke="#F2A71B" stroke-width="1" opacity="0.25" transform="rotate(8 200 190)"/>
-        <g class="flame-core">
-          <path d="M200 110 C185 140 175 155 175 175 C175 195 187 208 200 208 C213 208 225 195 225 175 C225 155 215 140 200 110Z" fill="#FFCB66" opacity="0.9"/>
-          <path d="M200 140 C193 158 188 168 188 180 C188 193 193 200 200 200 C207 200 212 193 212 180 C212 168 207 158 200 140Z" fill="#FFF3D6"/>
-        </g>
-        <path d="M120 235 C150 300 250 300 280 235" fill="none" stroke="#FFCB66" stroke-width="1.6" opacity="0.7"/>
-        <path d="M90 190 C90 250 140 300 200 300" fill="none" stroke="#1B3E8C" stroke-width="2.4" opacity="0.9"/>
-      </svg>
-    </div>
-  </div>
-</section> -->
 
 <section class="stats">
   <div class="wrap">
@@ -139,12 +66,12 @@
 
 <section class="mp-about-section" id="mpAboutSection">
   <div class="mp-about-container">
-    
+
     <!-- LEFT COLUMN: Image slides from Left -->
     <div class="mp-about-image-wrapper mp-animate-left">
-      <img 
-        src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000&auto=format&fit=crop" 
-        alt="Manufacturing Excellence Factory Machine" 
+      <img
+        src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000&auto=format&fit=crop"
+        alt="Manufacturing Excellence Factory Machine"
       />
     </div>
 
@@ -201,12 +128,12 @@
 </section>
 
 <section class="capabilities-section">
-  
+
   <span class="section-tagline">WHAT WE DO</span>
   <h2 class="section-title">Our Capabilities</h2>
 
   <div class="capabilities-grid">
-    
+
     <!-- Card 1 -->
     <div class="capability-card">
       <div class="icon-box">
@@ -299,7 +226,7 @@
       <!-- Card 5 -->
       <a href="#" class="mp-card">
         <div class="mp-image-wrapper">
-          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop" alt="Auto Drop Down Seal">
+          <img src="https://images.unsplash.com/photo-1508873696983-2df515122519?q=80&w=600&auto=format&fit=crop" alt="Auto Drop Down Seal">
         </div>
         <div>
           <h3 class="mp-product-title">Auto Drop Down Seal</h3>
@@ -322,7 +249,7 @@
   <!-- Ticker Animation Container -->
   <div class="mp-ticker-wrapper">
     <div class="mp-ticker-track">
-      
+
       <!-- Primary Logo Group -->
       <div class="mp-ticker-slide-group">
         <div class="mp-ticker-logo-item">
@@ -455,7 +382,7 @@
   </div>
 </section>
 
-<!-- <section class="cta-band">
+<section class="cta-band">
   <div class="wrap">
     <h2>Let's discuss your project</h2>
     <p class="lede" style="margin-left:auto;margin-right:auto;">Reach out for a sample, a spec sheet, or a competitive quote — our team typically replies within one business day.</p>
@@ -464,18 +391,18 @@
       <a href="custom-solution.html" class="btn btn-outline">Custom Solutions</a>
     </div>
   </div>
-</section> -->
+</section>
 
 
 <section class="mp-contact-section">
   <div class="mp-contact-container">
-    
-   
+
+    <!-- LEFT COLUMN: Contact Details -->
     <div class="mp-contact-info">
       <h2 class="mp-contact-heading">Let's Discuss<br>Your Project</h2>
       <p class="mp-contact-subtext">Ready to upgrade your supply chain? Reach out for a competitive quote.</p>
 
-      
+      <!-- Address Item -->
       <div class="mp-info-item">
         <div class="mp-info-icon">
           <svg viewBox="0 0 24 24">
@@ -529,94 +456,9 @@
   </div>
 </section>
 
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/madhav-emblem.png" alt="Madhav Polymers emblem">
-        <div>
-          <div class="name">Madhav Polymers</div>
-          <p>Advanced polymer sealing solutions, engineered for lasting trust — manufactured in Rajkot, Gujarat.</p>
-          <!-- Social Media Links Section -->
-<div class="footer-social-section">
+<!-- Shared footer is injected here by js/include.js -->
+<div id="footer-placeholder"></div>
 
-  <div class="social-links-grid">
-    
-    <!-- Facebook -->
-    <a href="#" aria-label="Facebook" class="social-btn facebook">
-      <svg viewBox="0 0 24 24">
-        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-      </svg>
-    </a>
-
-    <!-- Instagram -->
-    <a href="#" aria-label="Instagram" class="social-btn instagram">
-      <svg viewBox="0 0 24 24">
-        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-      </svg>
-    </a>
-
-    <!-- Twitter / X -->
-    <a href="#" aria-label="Twitter" class="social-btn twitter">
-      <svg viewBox="0 0 24 24">
-        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-      </svg>
-    </a>
-
-    <!-- LinkedIn -->
-    <a href="#" aria-label="LinkedIn" class="social-btn linkedin">
-      <svg viewBox="0 0 24 24">
-        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-        <rect x="2" y="9" width="4" height="12"/>
-        <circle cx="4" cy="4" r="2"/>
-      </svg>
-    </a>
-
-
-   
-  </div>
-</div>
-        </div>
-        
-      </div>
-      
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="quality.html">Quality</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Products</h4>
-        <ul>
-          <li><a href="product-weatherstrip.html">Weatherstrip</a></li>
-          <li><a href="product-rubber-gasket.html">Rubber Gasket</a></li>
-          <li><a href="product-pvc-seals-profiles.html">PVC Seals &amp; Profiles</a></li>
-          <li><a href="product-door-seals.html">Door Seals</a></li>
-          <li><a href="product-auto-drop-down-seal.html">Auto Drop Down Seal</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <ul>
-          <li>+91 9355761001</li>
-          <li>Info@madhavpolymers.in</li>
-          <li>Madhavpolymers05@gmail.com</li>
-          <li>Rajkot, Gujarat, India</li>
-        </ul>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>&copy; 2026 Madhav Polymers. All rights reserved.</span>
-      <span>Privacy Policy &nbsp;·&nbsp; Terms &amp; Conditions</span>
-    </div>
-  </div>
-</footer>
 <script>
   function handleFormSubmit(event) {
     event.preventDefault();
@@ -648,8 +490,7 @@
     }, 400);
   }
 
-
-   document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
     const section = document.getElementById("mpAboutSection");
 
     // IntersectionObserver triggers animation when 20% of section enters viewport
@@ -669,19 +510,11 @@
       observer.observe(section);
     }
   });
-
-  document.addEventListener('DOMContentLoaded', function () {
-    const header = document.querySelector('header');
-
-    window.addEventListener('scroll', function () {
-      if (window.scrollY > 40) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-  });
 </script>
+
+<!-- Loads header.html / footer.html into the placeholders above,
+     and re-binds header scroll + mobile menu + search behavior -->
+<script src="js/include.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

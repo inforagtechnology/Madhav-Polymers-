@@ -1,0 +1,57 @@
+/* ---------- Header search box (replaces the old "Get a Quote" nav button) ---------- */
+.nav-search{
+  display:flex;
+  align-items:center;
+  gap:0.4rem;
+  background:rgba(255,255,255,0.12);
+  border:1px solid rgba(255,255,255,0.35);
+  border-radius:999px;
+  padding:0.35rem 0.5rem 0.35rem 0.9rem;
+  transition:background .25s ease, border-color .25s ease, width .25s ease;
+}
+.nav-search__icon-btn{
+  background:none;
+  border:none;
+  padding:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:inherit;
+  cursor:pointer;
+  order:2;
+}
+.nav-search__input{
+  border:none;
+  background:none;
+  outline:none;
+  color:inherit;
+  font-family:var(--sans);
+  font-size:0.9rem;
+  width:120px;
+  transition:width .25s ease;
+}
+.nav-search__input::placeholder{
+  color:rgba(255,255,255,0.65);
+}
+.nav-search:focus-within{
+  background:rgba(255,255,255,0.18);
+  border-color:rgba(255,255,255,0.6);
+}
+.nav-search:focus-within .nav-search__input{
+  width:200px;
+}
+
+/* Header is white/scrolled state: darker text + border for contrast */
+header.scrolled .nav-search{
+  background:var(--cream-50);
+  border-color:var(--line);
+  color:var(--navy-900);
+}
+header.scrolled .nav-search__input::placeholder{
+  color:#7A84A6;
+}
+
+@media (max-width:680px){
+  .nav-search__input{width:110px;}
+  .nav-search:focus-within .nav-search__input{width:130px;}
+}

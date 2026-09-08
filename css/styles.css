@@ -158,11 +158,20 @@ header.scrolled nav.main-nav > ul > li.active > a {
 .nav-wrap {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0.7rem 2rem;
+  padding: 0.9rem 1.4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+}
+@media (max-width: 768px) {
+  .nav-wrap {
+    padding: 0.9rem 0.5rem;
+    gap: 1rem;
+  }
+  .header brand-text .name {
+    display: none; /* Hide */ 
+}
 }
 
 .brand {
@@ -189,11 +198,17 @@ header.scrolled nav.main-nav > ul > li.active > a {
 }
 
 .brand-text .tag {
+  /* display: none;  */
   font-size: 0.66rem;
   color: var(--gold-600);
   font-family: var(--sans);
   font-weight: 600;
   letter-spacing: 0.06em;
+}
+@media (max-width: 689px) {
+  .brand-text .tag{
+    display: none; 
+  }
 }
 
 nav.main-nav > ul {
@@ -295,6 +310,7 @@ nav.main-nav > ul > li.active > a::after {
   background: none;
   border: none;
   cursor: pointer;
+  background-color:white;
   padding: 0.4rem;
 }
 
@@ -322,15 +338,23 @@ header {
 }
 
 /* White text for initial dark transparent state */
-header nav.main-nav a,
+header nav.main-nav a{
+  header .brand-text .name {
+  color: #ffffff !important;
+}
+
+}
 header .brand-text .name {
   color: #ffffff !important;
 }
 
 header .brand-text .tag {
+  /* display: none;  */
   color: #f3c300; /* Bright gold for visibility on dark background */
 }
-
+.dropdown li a{
+  color:var(--navy-900) !important; 
+}
 /* Caret arrow white color on initial dark header */
 .has-dropdown > a .caret {
   border-top-color: #ffffff;
@@ -350,6 +374,7 @@ header.scrolled .brand-text .name {
 }
 
 header.scrolled .brand-text .tag {
+  /* display: none;  */
   color: var(--gold-600);
 }
 
@@ -363,7 +388,8 @@ header.scrolled nav.main-nav > ul > li.active > a {
   top: 100%;
   left: -1rem;
   margin-top: 0.6rem;
-  background: var(--white, #ffffff);
+  
+  background: #ecd291;
   border: 1px solid var(--line);
   box-shadow: 0 18px 34px -18px rgba(11, 34, 88, 0.28);
   min-width: 230px;
@@ -378,7 +404,7 @@ header.scrolled nav.main-nav > ul > li.active > a {
   display: block;
   padding: 0.6rem 1.2rem;
   font-size: 0.88rem;
-  color: var(--ink, #333333) !important;
+  color:#333333  !important;
 }
 
 .dropdown li a:hover {
@@ -1516,6 +1542,101 @@ footer ul li a:hover{color:var(--gold-300);}
   background-color: var(--gold-300, #107c65);
 }
 */
+
+
+/* ---------- Header Search Box ---------- */
+.nav-cta {
+  display: flex;
+  align-items: center;
+}
+
+.nav-search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  padding: 4px 6px 4px 16px;
+  transition: all 0.3s ease;
+  width: 160px;
+}
+
+.nav-search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.88rem;
+  color: #ffffff;
+  width: 100%;
+}
+
+.nav-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-search-btn {
+  background: #ffffff;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-search-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: #0b2258;
+}
+
+.nav-search-btn:hover {
+  transform: scale(1.05);
+  background-color: var(--cream-50, #f8fafc);
+}
+
+/* Focused State */
+.nav-search-form:focus-within {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+/* ---------- Scrolled Header State Adapters ---------- */
+header.scrolled .nav-search-form {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+header.scrolled .nav-search-input {
+  color: var(--navy-900, #0b2258);
+}
+
+header.scrolled .nav-search-input::placeholder {
+  color: #64748b;
+}
+
+header.scrolled .nav-search-btn {
+  background: var(--navy-900, #0b2258);
+}
+
+header.scrolled .nav-search-btn svg {
+  fill: #ffffff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 680px) {
+  .nav-search-form {
+    width: 160px;
+    padding: 3px 4px 3px 12px;
+  }
+}
+
 
 
 
