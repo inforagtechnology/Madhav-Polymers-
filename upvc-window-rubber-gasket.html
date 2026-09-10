@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gasket Product Catalog - Madhav Polymers</title>
+  <title>Office Partition System Rubber Gasket - Madhav Polymers</title>
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,9 +16,9 @@
 <body>
 
   <!-- Header -->
-  <header>
+  <!-- <header>
     <div class="nav-wrap">
-      <a href="../index.html" class="brand">
+      <a href="index.html" class="brand">
         <img src="/assets/madhav-logo-full.png" alt="Madhav Polymers emblem">
         <span class="brand-text">
           <span class="name">Madhav Polymers</span><br>
@@ -48,7 +48,7 @@
           <li><a href="quality.html">Quality</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
-      </nav>
+      </nav> 
 
       <div class="nav-cta">
         <form class="nav-search-form" action="search.html" method="GET">
@@ -62,8 +62,9 @@
       </div>
       <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
-  </header>
-
+  </header> -->
+<!-- Shared header is injected here by js/include.js -->
+<div id="header-placeholder"></div>
   <!-- Main Catalog Section -->
   <main class="catalog-section">
     <div class="container">
@@ -75,11 +76,10 @@
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
-          <input type="text" id="catalogSearchInput" placeholder="Search product..." autocomplete="off" />
-          <button type="button" id="catalogSearchClear" class="search-clear-btn" aria-label="Clear search" hidden>&times;</button>
+          <input type="text" class="catalog-search-input" placeholder="Search product..." />
         </div>
 
-        <div class="results-count"><span id="resultsCountNum">15</span> Products Found</div>
+        <div class="results-count">19 Products Found</div>
 
         <div class="topbar-controls">
           <div class="sort-box">
@@ -110,29 +110,29 @@
       </div>
 
       <!-- Product Grid -->
-      <div class="product-grid" id="productGrid">
+      <div class="product-grid">
 
-        <!-- 1. U Gasket 50x50mm -->
-        <div class="product-item-card" data-search="u gasket 50x50mm mp-1607 12mm glass 60 mtr 120 mtr">
+        <!-- Card 1 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1607.png" alt="U Gasket 50x50mm MP-1607" />
+            <img src="/assets/img/MP-178.png" alt="K Type Gasket MP-178" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">U Gasket 50x50mm</h3>
-            <div class="item-code-badge">MP-1607</div>
+            <h3 class="item-title">K Type Gasket</h3>
+            <div class="item-code-badge">MP-178</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">12mm Glass</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.2 to 3.3mm</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">60 Mtr</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">120 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -141,27 +141,27 @@
           </div>
         </div>
 
-        <!-- 2. Bottom L Gasket -->
-        <div class="product-item-card" data-search="bottom l gasket mp-1608 19x19mm 100 mtr 200 mtr">
+        <!-- Card 2 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1608.png" alt="Bottom L Gasket MP-1608" />
+            <img src="/assets/img/MP-188.png" alt="K Type Gasket MP-188" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">Bottom L Gasket</h3>
-            <div class="item-code-badge">MP-1608</div>
+            <h3 class="item-title">K Type Gasket</h3>
+            <div class="item-code-badge">MP-188</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">19x19mm</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.2 to 3.3mm</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">100 Mtr</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">200 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -170,27 +170,27 @@
           </div>
         </div>
 
-        <!-- 3. U Gasket 25x25mm -->
-        <div class="product-item-card" data-search="u gasket 25x25mm mp-1609 12mm glass 100 mtr 200 mtr">
+        <!-- Card 3 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1609.png" alt="U Gasket 25x25mm MP-1609" />
+            <img src="/assets/img/MP-198.png" alt="K Type Gasket MP-198" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">U Gasket 25x25mm</h3>
-            <div class="item-code-badge">MP-1609</div>
+            <h3 class="item-title">K Type Gasket</h3>
+            <div class="item-code-badge">MP-198</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">12mm Glass</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.2mm</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">100 Mtr</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">200 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -199,27 +199,27 @@
           </div>
         </div>
 
-        <!-- 4. Bottom Groove Gasket -->
-        <div class="product-item-card" data-search="bottom groove gasket mp-1610 22 x 8.5mm 200 mtr 400 mtr">
+        <!-- Card 4 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1610.png" alt="Bottom Groove Gasket MP-1610" />
+            <img src="/assets/img/MP-199.png" alt="Universal Gasket MP-199" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">Bottom Groove Gasket</h3>
-            <div class="item-code-badge">MP-1610</div>
+            <h3 class="item-title">Universal Gasket</h3>
+            <div class="item-code-badge">MP-199</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">22 x 8.5mm</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.2 to 3.4mm</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">200 Mtr</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">400 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -228,27 +228,27 @@
           </div>
         </div>
 
-        <!-- 5. U Gasket 50x50mm -->
-        <div class="product-item-card" data-search="u gasket 50x50mm mp-1612 12mm glass 60 mtr 120 mtr">
+        <!-- Card 5 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1612.png" alt="U Gasket 50x50mm MP-1612" />
+            <img src="/assets/img/MP-221.png" alt="Universal Gasket MP-221" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">U Gasket 50x50mm</h3>
-            <div class="item-code-badge">MP-1612</div>
+            <h3 class="item-title">Universal Gasket</h3>
+            <div class="item-code-badge">MP-221</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">12mm Glass</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">2.8mm</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">60 Mtr</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">120 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -257,27 +257,27 @@
           </div>
         </div>
 
-        <!-- 6. U Gasket 40x40mm -->
-        <div class="product-item-card" data-search="u gasket 40x40mm mp-1613 12mm glass 70 mtr 140 mtr">
+        <!-- Card 6 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1613.png" alt="U Gasket 40x40mm MP-1613" />
+            <img src="/assets/img/MP-222.png" alt="Casement Gasket MP-222" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">U Gasket 40x40mm</h3>
-            <div class="item-code-badge">MP-1613</div>
+            <h3 class="item-title">Casement Gasket</h3>
+            <div class="item-code-badge">MP-222</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">12mm Glass</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">2.8mm</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">70 Mtr</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">140 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -286,27 +286,27 @@
           </div>
         </div>
 
-        <!-- 7. Bottom Groove Gasket -->
-        <div class="product-item-card" data-search="bottom groove gasket mp-1614 22.7 x 8.5mm 100 mtr 200 mtr">
+        <!-- Card 7 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1614.png" alt="Bottom Groove Gasket MP-1614" />
+            <img src="/assets/img/MP-228.png" alt="Universal Gasket MP-228" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">Bottom Groove Gasket</h3>
-            <div class="item-code-badge">MP-1614</div>
+            <h3 class="item-title">Universal Gasket</h3>
+            <div class="item-code-badge">MP-228</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">22.7 x 8.5mm</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3 to 3.2mm</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">100 Mtr</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">200 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -315,27 +315,27 @@
           </div>
         </div>
 
-        <!-- 8. Bottom L Gasket -->
-        <div class="product-item-card" data-search="bottom l gasket mp-1615 15x19mm 100 mtr 200 mtr">
+        <!-- Card 8 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1615.png" alt="Bottom L Gasket MP-1615" />
+            <img src="/assets/img/MP-229.png" alt="Universal Gasket MP-229" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">Bottom L Gasket</h3>
-            <div class="item-code-badge">MP-1615</div>
+            <h3 class="item-title">Universal Gasket</h3>
+            <div class="item-code-badge">MP-229</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">15x19mm</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.2 to 3.4mm</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">100 Mtr</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">200 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -344,27 +344,27 @@
           </div>
         </div>
 
-        <!-- 9. Push Fit Gasket Bottom -->
-        <div class="product-item-card" data-search="push fit gasket bottom mp-1616 9mm gap 100 mtr 200 mtr">
+        <!-- Card 9 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1616.png" alt="Push Fit Gasket Bottom MP-1616" />
+            <img src="/assets/img/MP-230.png" alt="Universal Gasket 1mm MP-230" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">Push Fit Gasket Bottom</h3>
-            <div class="item-code-badge">MP-1616</div>
+            <h3 class="item-title">Universal Gasket 1mm</h3>
+            <div class="item-code-badge">MP-230</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">9mm Gap</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3 to 3.2mm</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">100 Mtr</span>
+                <span class="spec-val">300 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">200 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -373,27 +373,27 @@
           </div>
         </div>
 
-        <!-- 10. U Gasket Top Incline -->
-        <div class="product-item-card" data-search="u gasket top incline mp-1617 12mm glass 75 mtr 150 mtr">
+        <!-- Card 10 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1617.png" alt="U Gasket Top Incline MP-1617" />
+            <img src="/assets/img/MP-231.png" alt="Universal Gasket MP-231" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">U Gasket Top Incline</h3>
-            <div class="item-code-badge">MP-1617</div>
+            <h3 class="item-title">Universal Gasket</h3>
+            <div class="item-code-badge">MP-231</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">12mm Glass</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.5 to 3.6mm</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">75 Mtr</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">150 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -402,27 +402,27 @@
           </div>
         </div>
 
-        <!-- 11. Push Fit Gasket Bottom -->
-        <div class="product-item-card" data-search="push fit gasket bottom mp-1618 9mm gap 90 mtr 180 mtr">
+        <!-- Card 11 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1618.png" alt="Push Fit Gasket Bottom MP-1618" />
+            <img src="/assets/img/MP-233.png" alt="Universal Gasket MP-233" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">Push Fit Gasket Bottom</h3>
-            <div class="item-code-badge">MP-1618</div>
+            <h3 class="item-title">Universal Gasket</h3>
+            <div class="item-code-badge">MP-233</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">9mm Gap</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.8mm</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">90 Mtr</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">180 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -431,27 +431,27 @@
           </div>
         </div>
 
-        <!-- 12. Push Fit Gasket Bottom -->
-        <div class="product-item-card" data-search="push fit gasket bottom mp-1620 10.5mm gap 75 mtr 150 mtr">
+        <!-- Card 12 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1620.png" alt="Push Fit Gasket Bottom MP-1620" />
+            <img src="/assets/img/MP-234.png" alt="K Type Gasket 3mm MP-234" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">Push Fit Gasket Bottom</h3>
-            <div class="item-code-badge">MP-1620</div>
+            <h3 class="item-title">K Type Gasket 3mm</h3>
+            <div class="item-code-badge">MP-234</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">10.5mm Gap</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.0 to 3.2mm</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">75 Mtr</span>
+                <span class="spec-val">300 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">150 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -460,27 +460,27 @@
           </div>
         </div>
 
-        <!-- 13. Bottom L Strip Modular Ferry -->
-        <div class="product-item-card" data-search="bottom l strip modular ferry mp-1625 55 x 19mm 90 mtr 180 mtr">
+        <!-- Card 13 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1625.png" alt="Bottom L Strip Modular Ferry MP-1625" />
+            <img src="/assets/img/MP-237.png" alt="K Type Gasket MP-237" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">Bottom L Strip Modular Ferry</h3>
-            <div class="item-code-badge">MP-1625</div>
+            <h3 class="item-title">K Type Gasket</h3>
+            <div class="item-code-badge">MP-237</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">mm 55 x 19mm</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.2</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">90 Mtr</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">180 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -489,27 +489,27 @@
           </div>
         </div>
 
-        <!-- 14. Push Fit Gasket Bottom -->
-        <div class="product-item-card" data-search="push fit gasket bottom mp-1626 11.8mm gap 90 mtr 180 mtr">
+        <!-- Card 14 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1626.png" alt="Push Fit Gasket Bottom MP-1626" />
+            <img src="/assets/img/MP-238.png" alt="Bubble Gasket for Casement MP-238" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">Push Fit Gasket Bottom</h3>
-            <div class="item-code-badge">MP-1626</div>
+            <h3 class="item-title">Bubble Gasket for Casement</h3>
+            <div class="item-code-badge">MP-238</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">11.8mm Gap</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.5mm</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">90 Mtr</span>
+                <span class="spec-val">300 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">180 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -518,27 +518,143 @@
           </div>
         </div>
 
-        <!-- 15. U Rubber 65x38 Curved -->
-        <div class="product-item-card" data-search="u rubber 65x38 curved mp-1636 12mm glass 60 mtr 120 mtr">
+        <!-- Card 15 -->
+        <div class="product-item-card">
           <div class="product-image-container">
-            <img src="/assets/img/mp-1636.png" alt="U Rubber 65x38 Curved MP-1636" />
+            <img src="/assets/img/MP-241.png" alt="K Type Gasket 1.5mm MP-241" />
           </div>
           <div class="product-item-details">
-            <h3 class="item-title">U Rubber 65x38 Curved</h3>
-            <div class="item-code-badge">MP-1636</div>
+            <h3 class="item-title">K Type Gasket 1.5mm</h3>
+            <div class="item-code-badge">MP-241</div>
             <div class="item-specs-grid">
               <div>
-                <span class="spec-lbl">SIZE / SPEC</span>
-                <span class="spec-val">12mm Glass</span>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.0mm</span>
               </div>
               <div>
                 <span class="spec-lbl">ROLL LENGTH</span>
-                <span class="spec-val">60 Mtr</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
               </div>
             </div>
             <div class="item-qty-row">
               <span class="qty-lbl">Qty. Box/Bag</span>
-              <span class="qty-val">120 Mtr.</span>
+              <span class="qty-val">600 Mtr</span>
+            </div>
+            <div class="item-actions">
+              <a href="#quote" class="btn-quote">Get Quote</a>
+              <a href="https://wa.me/919355761001" target="_blank" class="btn-whatsapp">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="product-item-card">
+          <div class="product-image-container">
+            <img src="/assets/img/MP-242.png" alt="K Type Gasket 3mm MP-242" />
+          </div>
+          <div class="product-item-details">
+            <h3 class="item-title">K Type Gasket 3mm</h3>
+            <div class="item-code-badge">MP-242</div>
+            <div class="item-specs-grid">
+              <div>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.0 to 3.2mm</span>
+              </div>
+              <div>
+                <span class="spec-lbl">ROLL LENGTH</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
+              </div>
+            </div>
+            <div class="item-qty-row">
+              <span class="qty-lbl">Qty. Box/Bag</span>
+              <span class="qty-val">600 Mtr</span>
+            </div>
+            <div class="item-actions">
+              <a href="#quote" class="btn-quote">Get Quote</a>
+              <a href="https://wa.me/919355761001" target="_blank" class="btn-whatsapp">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="product-item-card">
+          <div class="product-image-container">
+            <img src="/assets/img/MP-243.png" alt="K Type Gasket MP-243" />
+          </div>
+          <div class="product-item-details">
+            <h3 class="item-title">K Type Gasket</h3>
+            <div class="item-code-badge">MP-243</div>
+            <div class="item-specs-grid">
+              <div>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.8</span>
+              </div>
+              <div>
+                <span class="spec-lbl">ROLL LENGTH</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
+              </div>
+            </div>
+            <div class="item-qty-row">
+              <span class="qty-lbl">Qty. Box/Bag</span>
+              <span class="qty-val">600 Mtr</span>
+            </div>
+            <div class="item-actions">
+              <a href="#quote" class="btn-quote">Get Quote</a>
+              <a href="https://wa.me/919355761001" target="_blank" class="btn-whatsapp">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="product-item-card">
+          <div class="product-image-container">
+            <img src="/assets/img/MP-257.png" alt="Universal Gasket MP-257" />
+          </div>
+          <div class="product-item-details">
+            <h3 class="item-title">Universal Gasket</h3>
+            <div class="item-code-badge">MP-257</div>
+            <div class="item-specs-grid">
+              <div>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.6</span>
+              </div>
+              <div>
+                <span class="spec-lbl">ROLL LENGTH</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
+              </div>
+            </div>
+            <div class="item-qty-row">
+              <span class="qty-lbl">Qty. Box/Bag</span>
+              <span class="qty-val">600 Mtr</span>
+            </div>
+            <div class="item-actions">
+              <a href="#quote" class="btn-quote">Get Quote</a>
+              <a href="https://wa.me/919355761001" target="_blank" class="btn-whatsapp">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 19 -->
+        <div class="product-item-card">
+          <div class="product-image-container">
+            <img src="/assets/img/MP-258.png" alt="Universal Gasket MP-258" />
+          </div>
+          <div class="product-item-details">
+            <h3 class="item-title">Universal Gasket</h3>
+            <div class="item-code-badge">MP-258</div>
+            <div class="item-specs-grid">
+              <div>
+                <span class="spec-lbl">GROOVE SIZE</span>
+                <span class="spec-val">3.0</span>
+              </div>
+              <div>
+                <span class="spec-lbl">ROLL LENGTH</span>
+                <span class="spec-val">300 Mtr / 600 Mtr</span>
+              </div>
+            </div>
+            <div class="item-qty-row">
+              <span class="qty-lbl">Qty. Box/Bag</span>
+              <span class="qty-val">600 Mtr</span>
             </div>
             <div class="item-actions">
               <a href="#quote" class="btn-quote">Get Quote</a>
@@ -548,12 +664,6 @@
         </div>
 
       </div>
-
-      <!-- No results message (hidden by default) -->
-      <p class="no-results-msg" id="noResultsMsg" hidden>
-        No products match &ldquo;<span id="noResultsTerm"></span>&rdquo;. Try a different name, MP code, or size.
-      </p>
-
     </div>
   </main>
 
@@ -567,15 +677,15 @@
             <div class="name">Madhav Polymers</div>
             <span class="tag">ADVANCED POLYMER &amp; LASTING TRUST</span>
             <p>Advanced polymer sealing solutions, engineered for lasting trust — manufactured in Rajkot, Gujarat.</p>
-            
-            <!-- Social Media Links Section -->
             <div class="footer-social-section">
               <div class="social-links-grid">
+                <!-- Facebook -->
                 <a href="#" aria-label="Facebook" class="social-btn facebook">
                   <svg viewBox="0 0 24 24">
                     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                   </svg>
                 </a>
+                <!-- Instagram -->
                 <a href="#" aria-label="Instagram" class="social-btn instagram">
                   <svg viewBox="0 0 24 24">
                     <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -583,11 +693,13 @@
                     <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                   </svg>
                 </a>
+                <!-- Twitter / X -->
                 <a href="#" aria-label="Twitter" class="social-btn twitter">
                   <svg viewBox="0 0 24 24">
                     <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
                   </svg>
                 </a>
+                <!-- LinkedIn -->
                 <a href="#" aria-label="LinkedIn" class="social-btn linkedin">
                   <svg viewBox="0 0 24 24">
                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
@@ -638,78 +750,6 @@
 
   <script src="/js/main.js"></script>
   <script src="/include.js"></script>
-
-  <!-- Live product search: filters the grid above against name, code, and specs -->
-  <style>
-    .search-clear-btn{
-      background:none;border:none;color:inherit;opacity:.55;font-size:18px;line-height:1;
-      cursor:pointer;padding:0 2px;margin-left:2px;
-    }
-    .search-clear-btn:hover{opacity:1;}
-    .no-results-msg{
-      text-align:center;padding:40px 16px;color:#6b6b6b;font-size:14.5px;
-    }
-    .product-item-card[hidden]{display:none;}
-  </style>
-  <script>
-  (function () {
-    var input = document.getElementById('catalogSearchInput');
-    var clearBtn = document.getElementById('catalogSearchClear');
-    var cards = Array.prototype.slice.call(document.querySelectorAll('#productGrid .product-item-card'));
-    var countEl = document.getElementById('resultsCountNum');
-    var noResultsMsg = document.getElementById('noResultsMsg');
-    var noResultsTerm = document.getElementById('noResultsTerm');
-    var totalCount = cards.length;
-
-    function normalize(str) {
-      return (str || '').toLowerCase().trim();
-    }
-
-    function filterCards() {
-      var term = normalize(input.value);
-      clearBtn.hidden = term.length === 0;
-
-      if (term.length === 0) {
-        cards.forEach(function (card) { card.hidden = false; });
-        countEl.textContent = totalCount;
-        noResultsMsg.hidden = true;
-        return;
-      }
-
-      var terms = term.split(/\s+/).filter(Boolean);
-      var visibleCount = 0;
-
-      cards.forEach(function (card) {
-        var haystack = card.getAttribute('data-search') || normalize(card.textContent);
-        var matches = terms.every(function (t) { return haystack.indexOf(t) !== -1; });
-        card.hidden = !matches;
-        if (matches) visibleCount++;
-      });
-
-      countEl.textContent = visibleCount;
-
-      if (visibleCount === 0) {
-        noResultsTerm.textContent = input.value.trim();
-        noResultsMsg.hidden = false;
-      } else {
-        noResultsMsg.hidden = true;
-      }
-    }
-
-    input.addEventListener('input', filterCards);
-
-    clearBtn.addEventListener('click', function () {
-      input.value = '';
-      filterCards();
-      input.focus();
-    });
-
-    // Optional: Enter key submits nothing here, just keeps focus (prevents any parent form submit)
-    input.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter') e.preventDefault();
-    });
-  })();
-  </script>
-
+  <script src="./main.js"></script>
 </body>
 </html>

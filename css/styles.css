@@ -213,7 +213,7 @@ header.scrolled nav.main-nav > ul > li.active > a {
 
 nav.main-nav > ul {
   display: flex;
-  gap: 1.9rem;
+  gap: 1.4rem;
   align-items: center;
 }
 
@@ -310,7 +310,7 @@ nav.main-nav > ul > li.active > a::after {
   background: none;
   border: none;
   cursor: pointer;
-  background-color:white;
+ 
   padding: 0.4rem;
 }
 
@@ -329,7 +329,7 @@ header {
   z-index: 1000;
   
   /* Dark semi-transparent shade overlay like screenshot */
-  background: rgba(0, 0, 0, 0.45); 
+  background: rgba(238, 232, 232, 0.343); 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   
@@ -502,7 +502,7 @@ header.scrolled nav.main-nav > ul > li.active > a {
 }
 
 /* ---------- Quality banner ---------- */
-.quality{background:rgb(238, 219, 16); color:var(--navy-950); text-align:center;}
+.quality{background:rgb(221, 216, 157); color:var(--navy-950); text-align:center;}
 .quality blockquote{
   font-family:var(--serif); font-size:clamp(1.5rem,1.2rem + 1.4vw,2.1rem);
   max-width:38ch; margin:0 auto 2rem; font-weight:500; line-height:1.35;
@@ -629,7 +629,7 @@ footer ul li a:hover{color:var(--gold-300);}
   nav.main-nav.open{display:block;}
   nav.main-nav > ul{flex-direction:column; align-items:flex-start; gap:0;}
   nav.main-nav > ul > li{width:100%; border-bottom:1px solid var(--line);}
-  nav.main-nav > ul > li > a{padding:0.9rem 0;}
+  nav.main-nav > ul > li > a{padding:0.9rem 0; color: var(--navy-900);}
   .dropdown{
     position:static; opacity:1; visibility:visible; transform:none;
     display:none; box-shadow:none; border:none; padding:0 0 0.6rem 1rem; min-width:0;
@@ -1785,7 +1785,7 @@ header.scrolled .nav-search-btn svg {
   left: 100%; /* Opens to the right of Rubber Gasket */
   display: none;
   background-color: #ffffff;
-  min-width: 220px;
+  min-width: 320px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   list-style: none;
   padding: 8px 0;
@@ -1881,4 +1881,161 @@ header.scrolled .nav-search-btn svg {
   color: rgba(255, 255, 255, 0.9);
   max-width: 750px;
   margin: 0 auto;
+}
+
+
+   /* Hero Slider Container */
+.hero-slider {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  max-height: 800px;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Individual Slide */
+.hero-slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.hero-slider .slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Semi-transparent dark overlay matching screenshots */
+.slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* Content Container (Left-aligned) */
+.slide-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin-left: 8%;
+  padding: 0 20px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.slide-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.slide-description {
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin-bottom: 28px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 540px;
+}
+
+/* Teal Button Styling */
+.btn-teal {
+  display: inline-block;
+  background-color: #f3c300; /* Matching green-teal tone */
+  color: #05031c;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-teal:hover {
+  background-color: #f3a600;
+  transform: translateY(-2px);
+}
+
+/* Circular Navigation Buttons */
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+   background-color:transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.slider-nav svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
+.slider-nav:hover {
+  background-color: #f8c50b;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slide-content {
+    margin-left: 9%;
+    max-width: 90%;
+  }
+  .slide-title {
+    font-size: 2rem;
+  }
+  .slide-description {
+    font-size: 0.95rem;
+  }
+  .slider-nav {
+    width: 36px;
+    height: 36px;
+  }
 }

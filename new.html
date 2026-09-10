@@ -3,579 +3,257 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Capabilities Section</title>
-  
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Google Fonts for Serif & Sans-Serif fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <style>
-    /* ==========================================
-       COLOR VARIABLES FROM LOGO
-    ========================================== */
-    :root {
-      --primary-navy: #08205C;     /* Deep Navy Blue from "MADHAV" & "M" logo */
-      --secondary-gold: #E59118;   /* Bright Gold/Amber from Lotus & "POLYMERS" */
-      --accent-gold: #F7A823;      /* Secondary Gold shade */
-      --card-bg-active: #FDF9F2;   /* Very subtle warm gold tint for highlighted card */
-      --text-dark: #0A192F;       /* High-contrast body text */
-      --text-muted: #5A6A85;      /* Subtitle body text */
-      --card-border: #E8ECF2;     /* Subtle gray/blue border */
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #FAFAFB;
-      color: var(--text-dark);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 40px 20px;
-    }
-
-    /* ==========================================
-       CAPABILITIES SECTION
-    ========================================== */
-    .capabilities-section {
-      max-width: 1200px;
-      width: 100%;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    /* Subheading / Tagline */
-    .section-tagline {
-      color: var(--secondary-gold);
-      font-size: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    /* Main Title */
-    .section-title {
-      font-family: 'Playfair Display', serif;
-      color: var(--primary-navy);
-      font-size: 3.2rem;
-      font-weight: 700;
-      margin-bottom: 50px;
-      letter-spacing: -0.5px;
-    }
-
-    /* Cards Grid */
-    .capabilities-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-    }
-
-    /* Individual Card Style */
-    .capability-card {
-      background: #FFFFFF;
-      border: 1px solid var(--card-border);
-      border-radius: 16px;
-      padding: 40px 30px;
-      text-align: left;
-      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-      position: relative;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .capability-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 15px 35px rgba(8, 32, 92, 0.08);
-      border-color: rgba(229, 145, 24, 0.3);
-    }
-
-    /* Highlighted / Active First Card */
-    .capability-card.featured {
-      background: var(--card-bg-active);
-      border-color: transparent;
-      box-shadow: 0 10px 30px rgba(8, 32, 92, 0.06);
-    }
-
-    /* Icon Container */
-    .icon-box {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 30px;
-      transition: all 0.3s ease;
-    }
-
-    /* Featured Icon (Solid Fill) */
-    .capability-card.featured .icon-box {
-      background: linear-gradient(135deg, var(--primary-navy), #0E328A);
-      color: #FFFFFF;
-      box-shadow: 0 6px 16px rgba(8, 32, 92, 0.25);
-    }
-
-    /* Outline Icons */
-    .capability-card:not(.featured) .icon-box {
-      border: 1.5px solid var(--secondary-gold);
-      color: var(--secondary-gold);
-      background: #FFFFFF;
-    }
-
-    .icon-box i {
-      font-size: 1.6rem;
-    }
-
-    /* Card Heading */
-    .card-title {
-      font-family: 'Playfair Display', serif;
-      color: var(--primary-navy);
-      font-size: 1.65rem;
-      font-weight: 700;
-      margin-bottom: 15px;
-      line-height: 1.25;
-    }
-
-    /* Card Description */
-    .card-description {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-      line-height: 1.6;
-      font-weight: 400;
-    }
-
-    /* ==========================================
-       RESPONSIVE DESIGN
-    ========================================== */
-    @media (max-width: 992px) {
-      .capabilities-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 650px) {
-      .capabilities-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .section-title {
-        font-size: 2.4rem;
-      }
-
-      .capability-card {
-        padding: 30px 20px;
-      }
-    }
-  </style>
+  <title>Document</title>
 </head>
-<body>
-
-
-  <style>
-  /* ==========================================
-     COLOR VARIABLES FROM LOGO
-  ========================================== */
-  .capabilities-section {
-    --logo-navy: #08205C;      /* Deep Navy Blue from "MADHAV" */
-    --logo-navy-light: #0d2e82;/* Slightly brighter navy for hover state */
-    --logo-gold: #E59118;      /* Gold/Amber from Lotus & "POLYMERS" */
-    --card-hover-bg: #F8F9FA;  /* Subtle background shade on card hover */
-    --text-dark: #0A192F;
-    --text-muted: #5A6A85;
-    --card-border: #E5E8ED;
-
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 60px 20px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-  }
-
-  .capabilities-section * {
-    box-sizing: border-box;
-  }
-
-  /* Subheading / Tagline */
-  .capabilities-section .section-tagline {
-    color: var(--logo-gold);
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    margin-bottom: 8px;
-    display: block;
-  }
-
-  /* Main Title */
-  .capabilities-section .section-title {
-    font-family: 'Playfair Display', serif;
-    color: var(--logo-navy);
-    font-size: 3.2rem;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 50px;
-    letter-spacing: -0.5px;
-  }
-
-  /* Cards Grid */
-  .capabilities-section .capabilities-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-  }
-
-  /* Individual Card Style */
-  .capabilities-section .capability-card {
-    background: #FFFFFF;
-    border: 1px solid var(--card-border);
-    border-radius: 16px;
-    padding: 40px 30px;
-    text-align: left;
-    transition: all 0.35s ease;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-  }
-
-  /* Icon Container (Default State: Navy outline for all cards) */
-  .capabilities-section .icon-box {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    border: 2px solid var(--logo-navy);
-    color: var(--logo-navy);
-    background: transparent;
-    transition: all 0.35s ease;
-  }
-
-  .capabilities-section .icon-box i {
-    font-size: 1.5rem;
-    transition: all 0.35s ease;
-  }
-
-  /* Card Headings */
-  .capabilities-section .card-title {
-    font-family: 'Playfair Display', serif;
-    color: var(--logo-navy);
-    font-size: 1.65rem;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 15px;
-    line-height: 1.25;
-  }
-
-  /* Card Description */
-  .capabilities-section .card-description {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    font-weight: 400;
-    margin: 0;
-  }
-
-  /* ==========================================
-     HOVER EFFECTS (ALL CARDS FILL UP ON HOVER)
-  ========================================== */
-  .capabilities-section .capability-card:hover {
-    background: var(--card-hover-bg);
-    border-color: rgba(8, 32, 92, 0.15);
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(8, 32, 92, 0.08);
-  }
-
-  /* Icon fills up with Navy Blue when hovered */
-  .capabilities-section .capability-card:hover .icon-box {
-    background: var(--logo-navy);
-    border-color: var(--logo-navy);
-    color: #FFFFFF; /* Icon becomes white on hover */
-    box-shadow: 0 6px 16px rgba(8, 32, 92, 0.25);
-  }
-
-  /* ==========================================
-     RESPONSIVE BREAKPOINTS
-  ========================================== */
-  @media (max-width: 992px) {
-    .capabilities-section .capabilities-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  @media (max-width: 650px) {
-    .capabilities-section .capabilities-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .capabilities-section .section-title {
-      font-size: 2.4rem;
-    }
-
-    .capabilities-section .capability-card {
-      padding: 30px 20px;
-    }
-  }
-</style>
-
-<!-- SECTION CONTENT START -->
-
 <style>
-    /* ---------- Footer ---------- */
-footer {
-  background: var(--navy-950, #030816);
-  color: rgba(255, 255, 255, 0.75);
-  padding: 4.5rem 0 1.6rem;
+  /* Hero Slider Container */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  min-height: 500px;
+  max-height: 800px;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr 1fr;
-  gap: 2rem;
-  padding-bottom: 3rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-/* Vertical column dividers matching your screenshot */
-.footer-col {
-  border-left: 1px solid rgba(255, 255, 255, 0.12);
-  padding-left: 2rem;
-}
-
-.footer-brand {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.footer-brand .brand-header {
-  display: flex;
-  gap: 0.8rem;
-  align-items: flex-start;
-}
-
-.footer-brand img {
-  height: 44px;
-  width: auto;
-  margin-top: 2px;
-}
-
-.footer-brand .name {
-  font-family: var(--serif);
-  color: var(--white, #ffffff);
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.footer-brand p {
-  font-size: 0.88rem;
-  margin-top: 0.6rem;
-  max-width: 32ch;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-/* Social Media Circular Buttons */
-.social-links {
+/* Individual Slide */
+.hero-slider .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
   display: flex;
   align-items: center;
-  gap: 0.8rem;
 }
 
-.social-icon {
-  width: 40px;
-  height: 40px;
+.hero-slider .slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Semi-transparent dark overlay matching screenshots */
+.slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* Content Container (Left-aligned) */
+.slide-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  margin-left: 8%;
+  padding: 0 20px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.slide-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.slide-description {
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin-bottom: 28px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 540px;
+}
+
+/* Teal Button Styling */
+.btn-teal {
+  display: inline-block;
+  background-color: #008060; /* Matching green-teal tone */
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-teal:hover {
+  background-color: #00664d;
+  transform: translateY(-2px);
+}
+
+/* Circular Navigation Buttons */
+.slider-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
+  background-color: #008060;
+  border: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.social-icon svg {
-  width: 18px;
-  height: 18px;
-  fill: none;
-  stroke: rgba(255, 255, 255, 0.8);
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  transition: stroke 0.3s ease, fill 0.3s ease;
-}
-
-/* Specific SVG fill adjustments for Facebook/LinkedIn */
-.social-icon[aria-label="Facebook"] svg,
-.social-icon[aria-label="LinkedIn"] svg {
-  fill: rgba(255, 255, 255, 0.8);
-  stroke: none;
-}
-
-/* Hover effect: Background turns to accent color and zooms up */
-.social-icon:hover {
-  background: var(--gold-300, #107c65); /* Change to #107c65 for green or var(--gold-300) for gold */
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.social-icon:hover svg {
-  stroke: #ffffff;
-}
-
-.social-icon[aria-label="Facebook"]:hover svg,
-.social-icon[aria-label="LinkedIn"]:hover svg {
+.slider-nav svg {
+  width: 24px;
+  height: 24px;
   fill: #ffffff;
 }
 
-footer h4 {
-  color: var(--white, #ffffff);
-  font-size: 0.95rem;
-  font-weight: 600;
-  margin-bottom: 1.1rem;
+.slider-nav:hover {
+  background-color: #00664d;
+  transform: translateY(-50%) scale(1.08);
 }
 
-footer ul {
-  list-style: none;
-  padding: 0;
+.prev-btn {
+  left: 20px;
 }
 
-footer ul li {
-  margin-bottom: 0.7rem;
-  font-size: 0.9rem;
+.next-btn {
+  right: 20px;
 }
 
-footer ul li a {
-  color: rgba(255, 255, 255, 0.75);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-footer ul li a:hover {
-  color: var(--gold-300, #107c65);
-}
-
-.foot-bottom {
-  padding-top: 1.6rem;
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.5);
-  flex-wrap: wrap;
-  gap: 0.8rem;
-}
-
-/* ---------- Responsive ---------- */
-@media (max-width: 960px) {
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2.2rem;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slide-content {
+    margin-left: 5%;
+    max-width: 90%;
   }
-  .footer-col {
-    border-left: none;
-    padding-left: 0;
+  .slide-title {
+    font-size: 2rem;
   }
-}
-
-@media (max-width: 680px) {
-  .footer-grid {
-    grid-template-columns: 1fr;
+  .slide-description {
+    font-size: 0.95rem;
   }
-  .foot-bottom {
-    flex-direction: column;
-    text-align: center;
+  .slider-nav {
+    width: 36px;
+    height: 36px;
   }
 }
 </style>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      
-      <!-- Brand & Social Icons -->
-      <div class="footer-brand">
-        <div class="brand-header">
-          <img src="assets/madhav-emblem.png" alt="Madhav Polymers emblem">
-          <div>
-            <div class="name">Madhav Polymers</div>
-            <p>Advanced polymer sealing solutions, engineered for lasting trust — manufactured in Rajkot, Gujarat.</p>
-          </div>
-        </div>
-
-        <!-- Social Media Icons Row -->
-        <div class="social-links">
-          <a href="#" aria-label="Facebook" class="social-icon">
-            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-          </a>
-          <a href="#" aria-label="Instagram" class="social-icon">
-            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="#" aria-label="Twitter" class="social-icon">
-            <svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
-          </a>
-          <a href="#" aria-label="LinkedIn" class="social-icon">
-            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-        </div>
+<body>
+  <section class="hero-slider">
+  <!-- Slides Container -->
+  <div class="slider-wrapper">
+    <!-- Slide 1 -->
+    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <h1 class="slide-title">Benchmark in Gaskets &amp; Seals</h1>
+        <p class="slide-description">Crafting high-quality sealing solutions for diverse industries with innovation and precision.</p>
+        <a href="contact.html" class="btn-teal">Contact Us</a>
       </div>
-
-      <!-- Column 1: Company Links -->
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="quality.html">Quality</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 2: Products Links -->
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="product-weatherstrip.html">Weatherstrip</a></li>
-          <li><a href="product-rubber-gasket.html">Rubber Gasket</a></li>
-          <li><a href="product-pvc-seals-profiles.html">PVC Seals &amp; Profiles</a></li>
-          <li><a href="product-door-seals.html">Door Seals</a></li>
-          <li><a href="product-auto-drop-down-seal.html">Auto Drop Down Seal</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 3: Contact Info -->
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li>+91 00000 00000</li>
-          <li>info@madhavpolymers.in</li>
-          <li>Rajkot, Gujarat, India</li>
-        </ul>
-      </div>
-
     </div>
 
-    <!-- Bottom Bar -->
-    <div class="foot-bottom">
-      <span>&copy; 2026 Madhav Polymers. All rights reserved.</span>
-      <span>Privacy Policy &nbsp;·&nbsp; Terms &amp; Conditions</span>
+    <!-- Slide 2 -->
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <h1 class="slide-title">Sustainability Meets Performance</h1>
+        <p class="slide-description">Our gaskets ensure superior performance while contributing to environmental responsibility.</p>
+        <a href="sustainability.html" class="btn-teal">Sustainability</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80');">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <h1 class="slide-title">Your Trusted Manufacturing Partner</h1>
+        <p class="slide-description">Delivering reliability, innovation, and excellence in gasket manufacturing since our inception.</p>
+        <a href="products.html" class="btn-teal">Product</a>
+      </div>
     </div>
   </div>
-</footer>
 
+  <!-- Navigation Arrows -->
+  <button class="slider-nav prev-btn" aria-label="Previous Slide">
+    <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+  </button>
+  <button class="slider-nav next-btn" aria-label="Next Slide">
+    <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+  </button>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".hero-slider .slide");
+  const prevBtn = document.querySelector(".hero-slider .prev-btn");
+  const nextBtn = document.querySelector(".hero-slider .next-btn");
 
+  let currentIndex = 0;
+  const slideInterval = 6000; // 6 seconds per slide
+  let timer;
 
+  function showSlide(index) {
+    if (index >= slides.length) currentIndex = 0;
+    else if (index < 0) currentIndex = slides.length - 1;
+    else currentIndex = index;
+
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === currentIndex);
+    });
+  }
+
+  function nextSlide() {
+    showSlide(currentIndex + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentIndex - 1);
+  }
+
+  function startTimer() {
+    timer = setInterval(nextSlide, slideInterval);
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    startTimer();
+  }
+
+  // Button Listeners
+  nextBtn.addEventListener("click", () => {
+    nextSlide();
+    resetTimer();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    prevSlide();
+    resetTimer();
+  });
+
+  // Start autoplay
+  startTimer();
+});
+</script>
 </body>
 </html>
