@@ -85,3 +85,107 @@
     document.dispatchEvent(new CustomEvent('partialsLoaded'));
   });
 })();
+
+
+
+  function handleFormSubmit(event) {
+    event.preventDefault();
+
+    // 1. Enter target WhatsApp number (with Country Code, without + sign)
+    const whatsappNumber = "919876543210"; // REPLACE WITH YOUR PHONE NUMBER
+
+    // 2. Fetch input field values
+    const name = document.getElementById('mpName').value.trim();
+    const email = document.getElementById('mpEmail').value.trim();
+    const phone = document.getElementById('mpPhone').value.trim() || 'Not provided';
+    const details = document.getElementById('mpDetails').value.trim();
+
+    // 3. Format the message for WhatsApp
+    const whatsappMessage = `*New Project Inquiry*%0A%0A` +
+      `*Name:* ${encodeURIComponent(name)}%0A` +
+      `*Email:* ${encodeURIComponent(email)}%0A` +
+      `*Phone:* ${encodeURIComponent(phone)}%0A` +
+      `*Project Details:* ${encodeURIComponent(details)}`;
+
+    // 4. Reveal success message bar
+    const successAlert = document.getElementById('mpSuccessAlert');
+    successAlert.style.display = 'block';
+
+    // 5. Open WhatsApp chat in a new browser tab
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+    setTimeout(() => {
+      window.open(whatsappURL, '_blank');
+    }, 400);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const section = document.getElementById("mpAboutSection");
+
+    // IntersectionObserver triggers animation when 20% of section enters viewport
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            section.classList.add("mp-active");
+            observer.unobserve(entry.target); // Triggers animation once
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    if (section) {
+      observer.observe(section);
+    }
+  });
+
+   document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".hero-slider .slide");
+  const prevBtn = document.querySelector(".hero-slider .prev-btn");
+  const nextBtn = document.querySelector(".hero-slider .next-btn");
+
+  let currentIndex = 0;
+  const slideInterval = 6000; // 6 seconds per slide
+  let timer;
+
+  function showSlide(index) {
+    if (index >= slides.length) currentIndex = 0;
+    else if (index < 0) currentIndex = slides.length - 1;
+    else currentIndex = index;
+
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === currentIndex);
+    });
+  }
+
+  function nextSlide() {
+    showSlide(currentIndex + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentIndex - 1);
+  }
+
+  function startTimer() {
+    timer = setInterval(nextSlide, slideInterval);
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    startTimer();
+  }
+
+  // Button Listeners
+  nextBtn.addEventListener("click", () => {
+    nextSlide();
+    resetTimer();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    prevSlide();
+    resetTimer();
+  });
+
+  // Start autoplay
+  startTimer();
+});
