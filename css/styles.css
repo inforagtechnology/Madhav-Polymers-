@@ -1869,7 +1869,7 @@ header.scrolled .nav-search-btn svg {
   font-weight: 700;
   line-height: 1.2;
   color: #ffffff;
-  margin-bottom: 1.25rem;
+  margin:auto;
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
@@ -2015,11 +2015,11 @@ header.scrolled .nav-search-btn svg {
 }
 
 .prev-btn {
-  left: 20px;
+  left: 7px;
 }
 
 .next-btn {
-  right: 20px;
+  right: 7px;
 }
 
 /* Responsive adjustments */
@@ -2175,11 +2175,11 @@ header.scrolled .nav-search-btn svg {
 }
 
 .prev-btn {
-  left: 20px;
+  left: 7px;
 }
 
 .next-btn {
-  right: 20px;
+  right: 7px;
 }
 
 /* Responsive adjustments */
@@ -2197,5 +2197,112 @@ header.scrolled .nav-search-btn svg {
   .slider-nav {
     width: 36px;
     height: 36px;
+  }
+}
+
+/* Base Dropdown Setup — desktop only now, so this can never override
+   the mobile accordion behavior defined in @media (max-width:680px)
+   above, regardless of which block comes first in the file. */
+@media (min-width: 681px) {
+  .main-nav ul li {
+    position: relative;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    display: none;
+    background-color: #ffffff;
+    min-width: 220px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    padding: 14px 0;
+    z-index: 100;
+  }
+
+  .has-dropdown:hover > .dropdown {
+    display: block;
+  }
+
+  /* Secondary Submenu (Nested Sub-Pages) */
+  .has-submenu {
+    position: relative;
+  }
+
+  .submenu {
+    position: absolute;
+    top: 0;
+    left: 92%;
+    display: none;
+    background-color: #ffffff;
+    min-width: 176px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    padding: 8px 0;
+    z-index: 101;
+  }
+
+  .has-submenu:hover > .submenu {
+    display: block;
+  }
+
+  .caret-right {
+    float: right;
+    font-size: 0.8rem;
+  }
+}
+
+
+/* Base Dropdown Setup — desktop only now, so this can never override
+   the mobile accordion behavior defined in @media (max-width:680px)
+   above, regardless of which block comes first in the file. */
+@media (min-width: 681px) {
+  .main-nav ul li {
+    position: relative;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    display: none;
+    background-color: #ffffff;
+    min-width: 170px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    padding: 14px 0;
+    z-index: 100;
+  }
+
+  .has-dropdown:hover > .dropdown {
+    display: block;
+  }
+
+  /* Secondary Submenu (Nested Sub-Pages) */
+  .has-submenu {
+    position: relative;
+  }
+
+  .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    background-color: #ffffff;
+    min-width: 320px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    padding: 8px 0;
+    z-index: 101;
+  }
+
+  .has-submenu:hover > .submenu {
+    display: block;
+  }
+
+  .caret-right {
+    float: right;
+    font-size: 0.8rem;
   }
 }
