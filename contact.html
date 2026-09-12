@@ -1,111 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Us — Madhav Polymers</title>
-<meta name="description" content="Get in touch with Madhav Polymers for quotes, samples, or spec sheets on our polymer sealing solutions.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Madhav Polymers</title>
+  <meta name="description"
+    content="Get in touch with Madhav Polymers for quotes, samples, or spec sheets on our polymer sealing solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
 
-<!-- Shared header is injected here by js/include.js -->
-<div id="header-placeholder"></div>
+  <!-- Shared header is injected here by js/include.js -->
+  <div id="header-placeholder"></div>
 
-<section class="page-hero">
-  <!-- Background Video -->
-  <video class="hero-video" autoplay loop muted playsinline>
-    <source src="https://assets.mixkit.co/videos/17675/17675-360.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  <section class="page-hero">
+    <!-- Background Video -->
+    <video class="hero-video" autoplay loop muted playsinline>
+      <source src="https://assets.mixkit.co/videos/17675/17675-360.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
-  <!-- Overlay for Text Legibility -->
-  <div class="hero-overlay"></div>
+    <!-- Overlay for Text Legibility -->
+    <div class="hero-overlay"></div>
 
-  <!-- Hero Content Wrap -->
-  <div class="wrap">
-    <span class="kicker">Get in touch</span>
-    <h1>Let's discuss your project</h1>
-    <p class="lede">
-      Reach out for a sample, a spec sheet, or a competitive quote — our team typically replies within one business day.
-    </p>
-  </div>
-</section>
-
-<section class="contact">
-  <div class="wrap contact-grid">
-    <div class="contact-info">
-      <h2>Reach us directly</h2>
-      <p class="lede">Prefer to call or email? Here's how to find us.</p>
-
-      <div class="info-row">
-        <div class="label">FACTORY ADDRESS</div>
-        <div class="val">Plot No. 00, Industrial Park,
-          <br> Faridabad, Haryana , India</div>
-      </div>
-      <div class="info-row">
-        <div class="label">PHONE</div>
-        <div class="val">+91 93557 61001</div>
-      </div>
-      <div class="info-row">
-        <div class="label">EMAIL</div>
-        <div class="val">info@madhavpolymers.in</div>
-      </div>
-      <div class="info-row">
-        <div class="label">BUSINESS HOURS</div>
-        <div class="val">Monday – Saturday, 9:30 AM – 6:30 PM IST</div>
-      </div>
-
-      <div class="map-frame">
-        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=70.75%2C22.25%2C70.85%2C22.33&amp;layer=mapnik&amp;marker=22.29%2C70.80" loading="lazy" title="Map showing  Faridabad , Haryana."></iframe>
-      </div>
+    <!-- Hero Content Wrap -->
+    <div class="wrap">
+      <span class="kicker">Get in touch</span>
+      <h1>Let's discuss your project</h1>
+      <p class="lede">
+        Reach out for a sample, a spec sheet, or a competitive quote — our team typically replies within one business
+        day.
+      </p>
     </div>
+  </section>
 
-    <form onsubmit="event.preventDefault(); alert('Thanks — your inquiry has been noted. This form is a static demo.');">
-      <div class="row-2">
-        <div class="field">
-          <label for="name">Your name</label>
-          <input id="name" type="text" placeholder="Full name" required>
+  <section class="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <h2>Reach us directly</h2>
+        <p class="lede">Prefer to call or email? Here's how to find us.</p>
+
+        <div class="info-row">
+          <div class="label">FACTORY ADDRESS</div>
+          <div class="val">Third Floor I 25 Honour Homes Sector 89,
+            <br> Faridabad, Haryana , India
+          </div>
+        </div>
+        <div class="info-row">
+          <div class="label">PHONE</div>
+          <div class="val">+91 93557 61001</div>
+        </div>
+        <div class="info-row">
+          <div class="label">EMAIL</div>
+          <div class="val">info@madhavpolymers.in</div>
+        </div>
+        <div>
+
+        </div>
+
+        <!-- <div class="map-frame">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=70.75%2C22.25%2C70.85%2C22.33&amp;layer=mapnik&amp;marker=22.29%2C70.80" loading="lazy" title="Map showing  Faridabad , Haryana."></iframe>
+      </div> -->
+      </div>
+
+
+      <form id="inquiryForm">
+        <div class="row-2">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" type="text" placeholder="Full name" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" type="tel" placeholder="+91 00000 00000">
+          </div>
         </div>
         <div class="field">
-          <label for="phone">Phone (optional)</label>
-          <input id="phone" type="tel" placeholder="+91 00000 00000">
+          <label for="email">Email address</label>
+          <input id="email" type="email" placeholder="you@company.com" required>
         </div>
-      </div>
-      <div class="field">
-        <label for="email">Email address</label>
-        <input id="email" type="email" placeholder="you@company.com" required>
-      </div>
-      <div class="field">
-        <label for="product">Product of interest</label>
-        <select id="product">
-          <option value="">Select a product (optional)</option>
-          <option>Weatherstrip</option>
-          <option>Rubber Gasket</option>
-          <option>PVC Seals &amp; Profiles</option>
-          <option>Door Seals</option>
-          <option>Auto Drop Down Seal</option>
-          <option>Custom Solution</option>
-        </select>
-      </div>
-      <div class="field">
-        <label for="message">Project details</label>
-        <textarea id="message" placeholder="Tell us what you're looking for..."></textarea>
-      </div>
-      <button type="submit" class="btn btn-gold">Send Inquiry</button>
-    </form>
-  </div>
-</section>
+        <div class="field">
+          <label for="product">Product of interest</label>
+          <select id="product">
+            <option value="">Select a product (optional)</option>
+            <option>Weatherstrip</option>
+            <option>Rubber Gasket</option>
+            <option>PVC Seals &amp; Profiles</option>
+            <option>Door Seals</option>
+            <option>Auto Drop Down Seal</option>
+            <option>Custom Solution</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Project details</label>
+          <textarea id="message" placeholder="Tell us what you're looking for..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold">Send Inquiry via WhatsApp</button>
+      </form>
 
 
-<!-- Shared footer is injected here by js/include.js -->
-<div id="footer-placeholder"></div>
+    </div>
+       <div class="map-frame">
+      <div class="map-frame">
+  <iframe 
+    src="https://www.openstreetmap.org/export/embed.html?bbox=77.2000%2C28.3200%2C77.4000%2C28.4800&amp;layer=mapnik&amp;marker=28.4089%2C77.3178" 
+    loading="lazy" 
+    title="Map showing Faridabad, Haryana.">
+  </iframe>
+</div>
+      </div> 
+  </section>
 
-<script src="js/main.js"></script>
-<script src="/include.js"></script>
+
+  <!-- Shared footer is injected here by js/include.js -->
+  <div id="footer-placeholder"></div>
+  <script>
+    document.getElementById('inquiryForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // 1. Enter your target WhatsApp phone number with country code (no + or spaces)
+      const whatsappNumber = "919449303946";
+
+      // 2. Extract input values
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim() || 'Not provided';
+      const email = document.getElementById('email').value.trim();
+      const product = document.getElementById('product').value || 'Not specified';
+      const details = document.getElementById('message').value.trim() || 'No additional details';
+
+      // 3. Format the WhatsApp text message
+      const formattedMessage =
+        `*New Inquiry Received*\n\n` +
+        `*Name:* ${name}\n` +
+        `*Phone:* ${phone}\n` +
+        `*Email:* ${email}\n` +
+        `*Product:* ${product}\n` +
+        `*Details:* ${details}`;
+
+      // 4. Construct the URL and redirect
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(formattedMessage)}`;
+
+      // Open WhatsApp in a new tab (or app on mobile)
+      window.open(whatsappUrl, '_blank');
+    });
+  </script>
+  <script src="js/main.js"></script>
+  <script src="/include.js"></script>
 </body>
+
 </html>
