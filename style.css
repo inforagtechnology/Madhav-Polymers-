@@ -128,7 +128,7 @@ body {
 /* Main Catalog Section Layout */
 .catalog-section {
   margin-top:0px;
-  padding: 100px 20px;
+  padding: 10px 20px;
   background-color: rgb(4, 4, 47);
 }
 
@@ -458,5 +458,127 @@ body {
 @media (max-width: 480px) {
   .product-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+
+/* for top header ffor everly pagess  */
+
+/* Subpage Hero Section */
+.subpage-hero {
+  position: relative;
+  width: 100%;
+  min-height: 40vh; /* Scalable height based on viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1600&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 24px;
+  box-sizing: border-box;
+}
+
+/* Dark Overlay */
+.hero-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 33, 105, 0.88) 0%, rgba(11, 34, 88, 0.75) 100%);
+  z-index: 1;
+}
+
+/* Inner Container */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+/* Breadcrumbs (Responsive Flex-Wrap) */
+.hero-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 8px;
+  font-size: clamp(12px, 1.5vw, 14px);
+  font-weight: 500;
+  color: #e88200;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.hero-breadcrumbs a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.hero-breadcrumbs a:hover {
+  color: #ffffff;
+}
+
+.hero-breadcrumbs .breadcrumb-current {
+  color: #e88200;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+/* Responsive Main Title (Fluid Typography using clamp) */
+.hero-title {
+  font-family: 'Georgia', serif;
+  font-size: clamp(24px, 5vw, 42px);
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 14px 0;
+  color: #ffffff;
+  word-wrap: break-word;
+}
+
+/* Responsive Subtitle */
+.hero-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(14px, 2vw, 17px);
+  font-weight: 400;
+  max-width: 720px;
+  margin: 0 auto;
+  color: #e2e8f0;
+  line-height: 1.55;
+}
+
+/* --- Mobile Breakpoints --- */
+
+/* Tablets & Small Laptops */
+@media (max-width: 992px) {
+  .subpage-hero {
+    min-height: 320px;
+    padding: 60px 20px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+  .subpage-hero {
+    min-height: 240px;
+    padding: 45px 16px;
+  }
+  
+  .hero-breadcrumbs {
+    gap: 4px 6px;
+    margin-bottom: 10px;
+  }
+
+  .hero-subtitle {
+    line-height: 1.45;
   }
 }

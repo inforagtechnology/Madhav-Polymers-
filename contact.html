@@ -13,10 +13,26 @@
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Button group styling for side-by-side action buttons */
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .btn-email {
+      background: var(--navy-900, #0B2258);
+      color: #ffffff;
+    }
+    .btn-email:hover {
+      background: var(--navy-800, #123072);
+      color: #ffffff;
+    }
+  </style>
 </head>
 
 <body>
-
 
   <!-- Shared header is injected here by js/include.js -->
   <div id="header-placeholder"></div>
@@ -36,8 +52,7 @@
       <span class="kicker">Get in touch</span>
       <h1>Let's discuss your project</h1>
       <p class="lede">
-        Reach out for a sample, a spec sheet, or a competitive quote — our team typically replies within one business
-        day.
+        Reach out for a sample, a spec sheet, or a competitive quote — our team typically replies within one business day.
       </p>
     </div>
   </section>
@@ -62,15 +77,7 @@
           <div class="label">EMAIL</div>
           <div class="val">info@madhavpolymers.in</div>
         </div>
-        <div>
-
-        </div>
-
-        <!-- <div class="map-frame">
-        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=70.75%2C22.25%2C70.85%2C22.33&amp;layer=mapnik&amp;marker=22.29%2C70.80" loading="lazy" title="Map showing  Faridabad , Haryana."></iframe>
-      </div> -->
       </div>
-
 
       <form id="inquiryForm">
         <div class="row-2">
@@ -103,53 +110,78 @@
           <label for="message">Project details</label>
           <textarea id="message" placeholder="Tell us what you're looking for..."></textarea>
         </div>
-        <button type="submit" class="btn btn-gold">Send Inquiry via WhatsApp</button>
+
+        <div class="btn-group">
+          <button type="button" id="btnWhatsApp" class="btn btn-gold">Send via WhatsApp</button>
+          <button type="button" id="btnEmail" class="btn btn-email">Send via Email</button>
+        </div>
       </form>
-
-
     </div>
-       <div class="map-frame">
-      <div class="map-frame">
-  <iframe 
-    src="https://www.openstreetmap.org/export/embed.html?bbox=77.2000%2C28.3200%2C77.4000%2C28.4800&amp;layer=mapnik&amp;marker=28.4089%2C77.3178" 
-    loading="lazy" 
-    title="Map showing Faridabad, Haryana.">
-  </iframe>
-</div>
-      </div> 
-  </section>
 
+    <div class="map-frame">
+      <iframe 
+        src="https://www.openstreetmap.org/export/embed.html?bbox=77.2000%2C28.3200%2C77.4000%2C28.4800&amp;layer=mapnik&amp;marker=28.4089%2C77.3178" 
+        loading="lazy" 
+        title="Map showing Faridabad, Haryana.">
+      </iframe>
+    </div> 
+  </section>
 
   <!-- Shared footer is injected here by js/include.js -->
   <div id="footer-placeholder"></div>
+
   <script>
-    document.getElementById('inquiryForm').addEventListener('submit', function (event) {
-      event.preventDefault();
+    const form = document.getElementById('inquiryForm');
+    const whatsappNumber = "919449303946";
+    const recipientEmail = "info@madhavpolymers.in";
 
-      // 1. Enter your target WhatsApp phone number with country code (no + or spaces)
-      const whatsappNumber = "919449303946";
+    function getFormData() {
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return null;
+      }
+      return {
+        name: document.getElementById('name').value.trim(),
+        phone: document.getElementById('phone').value.trim() || 'Not provided',
+        email: document.getElementById('email').value.trim(),
+        product: document.getElementById('product').value || 'Not specified',
+        details: document.getElementById('message').value.trim() || 'No additional details'
+      };
+    }
 
-      // 2. Extract input values
-      const name = document.getElementById('name').value.trim();
-      const phone = document.getElementById('phone').value.trim() || 'Not provided';
-      const email = document.getElementById('email').value.trim();
-      const product = document.getElementById('product').value || 'Not specified';
-      const details = document.getElementById('message').value.trim() || 'No additional details';
+    // WhatsApp Action
+    document.getElementById('btnWhatsApp').addEventListener('click', function () {
+      const data = getFormData();
+      if (!data) return;
 
-      // 3. Format the WhatsApp text message
       const formattedMessage =
         `*New Inquiry Received*\n\n` +
-        `*Name:* ${name}\n` +
-        `*Phone:* ${phone}\n` +
-        `*Email:* ${email}\n` +
-        `*Product:* ${product}\n` +
-        `*Details:* ${details}`;
+        `*Name:* ${data.name}\n` +
+        `*Phone:* ${data.phone}\n` +
+        `*Email:* ${data.email}\n` +
+        `*Product:* ${data.product}\n` +
+        `*Details:* ${data.details}`;
 
-      // 4. Construct the URL and redirect
       const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(formattedMessage)}`;
-
-      // Open WhatsApp in a new tab (or app on mobile)
       window.open(whatsappUrl, '_blank');
+    });
+
+    // Email Action (Direct client mailto link)
+    document.getElementById('btnEmail').addEventListener('click', function () {
+      const data = getFormData();
+      if (!data) return;
+
+      const subject = `New Inquiry from ${data.name} - ${data.product}`;
+      const body = 
+        `New Inquiry Details:\n\n` +
+        `Name: ${data.name}\n` +
+        `Phone: ${data.phone}\n` +
+        `Email: ${data.email}\n` +
+        `Product of Interest: ${data.product}\n\n` +
+        `Project Details:\n${data.details}`;
+
+      const mailtoUrl = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoUrl;
     });
   </script>
   <script src="js/main.js"></script>
