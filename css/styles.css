@@ -2276,4 +2276,12 @@ header.scrolled .nav-search-btn svg {
 
 /* new csssssssssssssssssssssss */
 
-
+  .hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the full section background */
+  z-index: -1;
+}

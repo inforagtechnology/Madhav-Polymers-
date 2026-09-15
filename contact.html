@@ -29,6 +29,15 @@
       background: var(--navy-800, #123072);
       color: #ffffff;
     }
+     .hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the full section background */
+  z-index: -1;
+}
   </style>
 </head>
 
@@ -37,25 +46,22 @@
   <!-- Shared header is injected here by js/include.js -->
   <div id="header-placeholder"></div>
 
-  <section class="page-hero">
-    <!-- Background Video -->
-    <video class="hero-video" autoplay loop muted playsinline>
-      <source src="https://assets.mixkit.co/videos/17675/17675-360.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+<section class="page-hero">
+  <!-- Background Image -->
+  <img class="hero-video" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop" alt="Modern Glass Building Architecture" />
 
-    <!-- Overlay for Text Legibility -->
-    <div class="hero-overlay"></div>
+  <!-- Overlay for Text Legibility -->
+  <div class="hero-overlay"></div>
 
-    <!-- Hero Content Wrap -->
-    <div class="wrap">
-      <span class="kicker">Get in touch</span>
-      <h1>Let's discuss your project</h1>
-      <p class="lede">
-        Reach out for a sample, a spec sheet, or a competitive quote — our team typically replies within one business day.
-      </p>
-    </div>
-  </section>
+  <!-- Hero Content Wrap -->
+  <div class="wrap">
+    <span class="kicker">Get in touch</span>
+    <h1>Let's discuss your project</h1>
+    <p class="lede">
+      Reach out for a sample, a spec sheet, or a competitive quote — our team typically replies within one business day.
+    </p>
+  </div>
+</section>
 
   <section class="contact">
     <div class="wrap contact-grid">
@@ -64,7 +70,7 @@
         <p class="lede">Prefer to call or email? Here's how to find us.</p>
 
         <div class="info-row">
-          <div class="label">FACTORY ADDRESS</div>
+          <div class="label">ADDRESS</div>
           <div class="val">Third Floor I 25 Honour Homes Sector 89,
             <br> Faridabad, Haryana , India
           </div>

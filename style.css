@@ -472,7 +472,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1600&auto=format&fit=crop');
+  background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -487,7 +487,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(0, 33, 105, 0.88) 0%, rgba(11, 34, 88, 0.75) 100%);
+  background: linear-gradient(135deg, rgba(0, 33, 105, 0.49) 0%, rgba(11, 34, 88, 0.507) 100%);
   z-index: 1;
 }
 
