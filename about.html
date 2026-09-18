@@ -4,58 +4,102 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Us — Madhav Polymers</title>
-<meta name="description" content="Madhav Polymers has spent two decades manufacturing precision polymer sealing solutions from our facility in  Faridabad Haryana.">
+<meta name="description" content="Madhav Polymers has spent over 20 years manufacturing precision polymer sealing solutions.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+
+<style>
+  /* --- CENTERED HERO SECTION STYLES (MATCHING REFERENCE IMAGE) --- */
+  .about-hero {
+    position: relative;
+    padding: 100px 20px 80px 20px;
+    background: linear-gradient(rgba(138, 172, 206, 0.26), rgba(240, 244, 248, 0.85)), 
+                url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-hero-container {
+    max-width: 850px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-hero-logo {
+    width: 140px;
+    height: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  .about-hero-tag {
+    color: #e67e22;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+
+  .about-hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 20px;
+    line-height: 1.1;
+  }
+
+  .about-hero-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #334155;
+    max-width: 800px;
+  }
+
+  @media (max-width: 768px) {
+    .about-hero {
+      padding: 60px 20px;
+    }
+    .about-hero-title {
+      font-size: 2.5rem;
+    }
+    .about-hero-logo {
+      width: 110px;
+    }
+  }
+</style>
 </head>
 <body>
 
 <div id="header-placeholder"></div>
-  <section class="hero-slider ">
-  <!-- Slides Container -->
-  <div class="slider-wrapper">
-    <!-- Slide 1 -->
-    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80');">
-      <div class="slide-overlay"></div>
-      <div class="slide-content">
-        <h1 class="slide-title">Benchmark in Gaskets &amp; Seals</h1>
-        <p class="slide-description">Crafting high-quality sealing solutions for diverse industries with innovation and precision.</p>
-        <a href="contact.html" class="btn-teal">Contact Us</a>
-      </div>
-    </div>
 
-    <!-- Slide 2 -->
-    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');">
-      <div class="slide-overlay"></div>
-      <div class="slide-content">
-        <h1 class="slide-title">Sustainability Meets Performance</h1>
-        <p class="slide-description">Our gaskets ensure superior performance while contributing to environmental responsibility.</p>
-        <a href="sustainability.html" class="btn-teal">Sustainability</a>
-      </div>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80');">
-      <div class="slide-overlay"></div>
-      <div class="slide-content">
-        <h1 class="slide-title">Your Trusted Manufacturing Partner</h1>
-        <p class="slide-description">Delivering reliability, innovation, and excellence in gasket manufacturing since our inception.</p>
-        <a href="products.html" class="btn-teal">Product</a>
-      </div>
-    </div>
+<!-- HERO SECTION MATCHING REFERENCE IMAGE -->
+<section class="about-hero">
+  <div class="about-hero-container">
+    <!-- Centered Logo Image (Replace 'images/logo.png' with your logo file path) -->
+    <img src="./assets/madhav-logo-full.png" alt="Madhav Polymers Logo" class="about-hero-logo">
+    
+    <!-- Tagline -->
+    <span class="about-hero-tag">20+ Years of Excellence</span>
+    
+    <!-- Main Heading -->
+    <h1 class="about-hero-title">About Madhav Polymers</h1>
+    
+    <!-- Description Paragraph -->
+    <p class="about-hero-description">
+      Madhav Polymers has spent over 5 years manufacturing precision polymer sealing solutions. We are your trusted manufacturing partner, delivering reliability, innovation, and excellence in gasket manufacturing since our inception. Our commitment to quality ensures superior performance while contributing to environmental responsibility.
+    </p>
   </div>
-
-  <!-- Navigation Arrows -->
-  <button class="slider-nav prev-btn" aria-label="Previous Slide">
-    <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
-  </button>
-  <button class="slider-nav next-btn" aria-label="Next Slide">
-    <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-  </button>
 </section>
-
 
 <section class="about"> 
   <div class="wrap"> 
@@ -94,7 +138,6 @@
     </div> 
   </div> 
 </section> 
-
 
 <section class="timeline"> 
   <div class="wrap"> 
@@ -147,7 +190,6 @@
   </div> 
 </section> 
 
-
 <section class="cta-band"> 
   <div class="wrap"> 
     <h2>Looking for the Right Polymer Solution?</h2> 
@@ -161,7 +203,6 @@
     </div> 
   </div> 
 </section>
-
 
 <!-- Shared footer is injected here by js/include.js -->
 <div id="footer-placeholder"></div>
